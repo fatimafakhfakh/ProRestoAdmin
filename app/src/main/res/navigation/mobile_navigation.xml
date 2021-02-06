@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.prorestoadmin.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+
+    <fragment
+        android:id="@+id/navigation_caisse"
+        android:name="com.example.prorestoadmin.ui.caisse.CaisseFragment"
+        android:label="@string/title_caisse"
+        tools:layout="@layout/fragment_caisse" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.prorestoadmin.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard"/>
+
+    <!--   -->
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.prorestoadmin.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_parametrage"
+        android:name="com.example.prorestoadmin.ui.parametrage.ParametrageFragment"
+        android:label="@string/title_menu"
+        tools:layout="@layout/fragment_parametrage" >
+        <action
+            android:id="@+id/action_navigation_parametrage_self"
+            app:destination="@id/navigation_parametrage" />
+    </fragment>
+
+
+</navigation>

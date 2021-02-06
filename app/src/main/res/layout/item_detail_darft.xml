@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_num_piece"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:text="N° Livraison"
+            android:typeface="serif"/>
+
+
+
+        <TextView
+            android:id="@+id/txt_montant_piece"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+
+            android:text="Quantité"
+            android:typeface="serif"/>
+
+
+    <TextView
+        android:id="@+id/txt_recu_draft"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="10.222"
+        android:typeface="serif"/>
+
+
+</LinearLayout>
+
+

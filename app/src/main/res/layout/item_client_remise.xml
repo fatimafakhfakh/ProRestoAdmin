@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_personel"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="#40FCF9F9"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="2dp"
+            app:cardMaxElevation="2dp">
+
+            <FrameLayout
+                android:id="@+id/frm_pos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_edge_red" >
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_livraison001"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                  >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@drawable/ic_article" />
+
+
+                        <TextView
+                            android:id="@+id/txt_code_article_001"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="001"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/txt_designation_001"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SUPER FRITE LONG 10*10 * 7.5 KG"
+                            android:textSize="10dp"
+                            android:textStyle="italic"
+                            android:gravity="center"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@drawable/ic_remise" />
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Remise"
+                            android:textColor="@color/blue"
+                            android:textSize="10dp"/>
+
+                        <TextView
+                            android:id="@+id/txt_taux_remise_001"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50 %"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@drawable/ic_ttc" />
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TTC"
+                            android:textColor="@color/color_g_5"
+                            android:textSize="12dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/txt_ttc_001"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50 %"
+                            android:textColor="@color/color_g_5"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/line" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_livraison_002"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@drawable/ic_article" />
+
+
+                        <TextView
+                            android:id="@+id/txt_code_article_002"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="001"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/txt_designation_002"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="SUPER FRITE LONG 10*10 * 7.5 KG"
+                        android:textSize="10dp"
+                        android:textStyle="italic" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@drawable/ic_remise" />
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Remise"
+                            android:textColor="@color/blue"
+                            android:textSize="10dp"
+                           />
+
+                        <TextView
+                            android:id="@+id/txt_taux_remise_002"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50 %"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@drawable/ic_ttc" />
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TTC"
+                            android:textColor="@color/color_g_5"
+                            android:textSize="12dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/txt_ttc_002"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50 %"
+                            android:textColor="@color/color_g_5"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/line" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_livraison_003"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@drawable/ic_article" />
+
+
+                        <TextView
+                            android:id="@+id/txt_code_article_003"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="001"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/txt_designation_003"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SUPER FRITE LONG 10*10 * 7.5 KG"
+                        android:textSize="10dp"
+                        android:textStyle="italic"
+                        android:gravity="center"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@drawable/ic_remise" />
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Remise"
+                            android:textColor="@color/blue"
+                            android:textSize="10dp"/>
+
+                        <TextView
+                            android:id="@+id/txt_taux_remise_003"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50 %"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@drawable/ic_ttc" />
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TTC"
+                            android:textColor="@color/color_g_5"
+                            android:textSize="12dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/txt_ttc_003"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50 %"
+                            android:textColor="@color/color_g_5"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/line_h"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/line_h"
+                    android:layout_weight="1"/>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/line_h"
+                    android:layout_weight="1"/>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_livraisondd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@drawable/ic_article" />
+
+
+                        <TextView
+                            android:id="@+id/txt_code_article_004"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="001"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/txt_designation_004"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SUPER FRITE LONG 10*10 * 7.5 KG"
+                        android:textSize="10dp"
+                        android:textStyle="italic"
+                        android:gravity="center"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@drawable/ic_remise" />
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Remise"
+                            android:textColor="@color/blue"
+                            android:textSize="10dp"/>
+
+                        <TextView
+                            android:id="@+id/txt_taux_remise_004"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50 %"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@drawable/ic_ttc" />
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TTC"
+                            android:textColor="@color/color_g_5"
+                            android:textSize="12dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/txt_ttc_004"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50 %"
+                            android:textColor="@color/color_g_5"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/line" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_livraison_005"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@drawable/ic_article" />
+
+
+                        <TextView
+                            android:id="@+id/txt_code_article_005"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="001"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/txt_designation_005"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SUPER FRITE LONG 10*10 * 7.5 KG"
+                        android:textSize="10dp"
+                        android:textStyle="italic"
+                        android:gravity="center"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@drawable/ic_remise" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Remise"
+                            android:textColor="@color/blue"
+                            android:textSize="10dp"/>
+
+                        <TextView
+                            android:id="@+id/txt_taux_remise_005"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50 %"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@drawable/ic_ttc" />
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TTC"
+                            android:textColor="@color/color_g_5"
+                            android:textSize="12dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/txt_ttc_005"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50 %"
+                            android:textColor="@color/color_g_5"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/line" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_livraison_006"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@drawable/ic_article" />
+
+
+                        <TextView
+                            android:id="@+id/txt_code_article_006"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="001"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/txt_designation_006"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SUPER FRITE LONG 10*10 * 7.5 KG"
+                        android:textSize="10dp"
+                        android:textStyle="italic"
+                        android:gravity="center"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@drawable/ic_remise" />
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Remise"
+                            android:textColor="@color/blue"
+                            android:textSize="10dp"/>
+
+                        <TextView
+                            android:id="@+id/txt_taux_remise_006"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50 %"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@drawable/ic_ttc" />
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TTC"
+                            android:textColor="@color/color_g_5"
+                            android:textSize="12dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/txt_ttc_006"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50 %"
+                            android:textColor="@color/color_g_5"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="60dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_customer"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#FDFBFB"/>
+
+            <TextView
+                android:id="@+id/txt_raison_social"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text"
+                android:textSize="20dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="18dp"/>
+
+
+            <!-- <androidx.cardview.widget.CardView
+                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                 android:id="@+id/card_icon"
+                 android:layout_width="100dp"
+                 android:layout_height="100dp"
+                 android:clickable="true"
+                 android:layout_gravity="center"
+                 android:foreground="?android:attr/selectableItemBackground"
+                 card_view:cardBackgroundColor="#2FFCF9F9"
+                 card_view:cardCornerRadius="30dp"
+                 card_view:cardElevation="2dp"
+                 card_view:cardMaxElevation="2dp"
+                 android:layout_centerInParent="true">
+
+
+             </androidx.cardview.widget.CardView>-->
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

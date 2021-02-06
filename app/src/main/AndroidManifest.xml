@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prorestoadmin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_i2s"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.gratuite.activity.TracabiliteGratuiteClientActivity"></activity>
+        <activity
+            android:name=".activity.SplachScreenActivity"
+            android:theme="@style/noactionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".client.RemiseClientActivity"
+            android:label="Remise Article Client " />
+        <activity
+            android:name=".EntreStock.EtatEntreStockActivity"
+            android:label="Bon Entrée Stock " />
+        <activity
+            android:name=".client.DetailSoldeClientActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".client.CreditClientParRecActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".vente.activity.BonRetourActivity"
+            android:label="Bon Retour Vente" />
+        <activity
+            android:name=".vente.activity.BonLivraisonActivity"
+            android:label="Bon Livraison Vente" />
+        <activity
+            android:name=".rapportPersonnel.RapportActivity"
+            android:label="@string/title_activity_rapport"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FicheArticle.FicheArticleActivity"
+            android:label="@string/title_activity_fiche_article"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EtatDeStock.EtatDeStockActivity"
+            android:label="@string/title_activity_etat_de_stock"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.DetailLivraisonActivity"
+            android:label="@string/title_activity_detail_livraison"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ParametrageActivity"
+            android:theme="@style/noactionBar" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:label="@string/title_activity_home" />
+        <activity
+            android:name=".activity.LoginAdminActivity"
+            android:theme="@style/noactionBar" />
+        <activity android:name=".activity.CompteDesactiveActivity" />
+        <activity android:name=".activity.ConnexionEuServeurEchoueActivity" />
+        <activity
+            android:name=".client.ClientNonMouvementeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.gratuite.activity.GratuiteEnCoursActivity"
+            android:label="Gratuité en Cours " />
+        <activity android:name=".ui.caisse.MouvementCaisseRecetteActivity" />
+        <activity
+            android:name=".ui.caisse.MouvementCaisseDepenseDetailActivity"
+            android:label="Detail Mouvement Caisse " />
+        <activity
+            android:name=".client.TauxRecouvrementActivity"
+            android:label="Etat Taux Recouvrement " />
+        <activity android:name=".atest.TestActivity" />
+        <activity
+            android:name=".ui.gratuite.activity.BonGratuiteActivity"
+            android:label="Bon Gratuité" />
+        <activity
+            android:name=".ui.gratuite.activity.MaquetteGratuiteActivity"
+            android:label="Maquette Gratuité" />
+        <activity
+            android:name=".ui.gratuite.activity.GratuiteExpireActivity"
+            android:label="Gratuité Expiré" />
+    </application>
+
+</manifest>

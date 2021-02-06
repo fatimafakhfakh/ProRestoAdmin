@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_login"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="20dp">
+
+
+        <LinearLayout
+            android:id="@+id/ll_livraison"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/ic_livraison" />
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Livr."/>
+
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/line" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_retour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/ic_retour" />
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Retour"/>
+
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/line" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_gratuit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/ic_gratuit" />
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gratuit">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/line" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_caisse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+
+            <ImageView
+                android:id="@+id/img_caisse"
+                android:layout_width="17dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/ic_portfeuille" />
+
+
+            <TextView
+                android:id="@+id/txt_caisse_libelle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Draft. Règl.">
+
+            </TextView>
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+   <RadioGroup
+        android:id="@+id/rg_fonction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rb_tout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/rbtn_selector_"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="Tout"
+            android:textColor="@drawable/rbtn_textcolor_selector_" />
+
+
+        <RadioButton
+            android:id="@+id/rb_liv_recouv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/rbtn_selector_"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text=" Livreur / Recouvreur "
+            android:textColor="@drawable/rbtn_textcolor_selector_" />
+
+
+        <RadioButton
+            android:id="@+id/rb_agent_bureau"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/rbtn_selector_"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="Agent Bureau"
+            android:textColor="@drawable/rbtn_textcolor_selector_" />
+
+
+    </RadioGroup>
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btn_date_du_jour"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="50dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="#66FCF9F9"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="2dp"
+        card_view:cardMaxElevation="2dp"
+        card_view:contentPadding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_plan_jour" />
+
+                <TextView
+                    android:id="@+id/txt_mois_du_jour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="Janv."
+                    android:textColor="@color/colortext"
+                    android:textSize="9dp" />
+
+                <TextView
+                    android:id="@+id/txt_date_du_jour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="0dp"
+                    android:text="03"
+                    android:textSize="18dp" />
+
+            </RelativeLayout>
+            <!--  -->
+
+            <TextView
+                android:id="@+id/txt_annee_du_jour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="2020"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_etat_pesonnel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="160dp">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <include layout="@layout/bottom_sheet_home" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

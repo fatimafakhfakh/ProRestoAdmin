@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    tools:context=".ui.dashboard.DashboardFragment"
+    android:background="@drawable/back_login">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_article"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="10dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:contentPadding="10dp"
+                    card_view:cardBackgroundColor="#66FCF9F9"
+                    card_view:cardElevation="2dp"
+                    card_view:cardMaxElevation="6dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+
+                        <RelativeLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/ic_article"
+                                android:padding="13dp"/>
+
+
+
+                        </RelativeLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:src="@drawable/line_h"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="Article"
+                            android:textSize="15dp"
+                            android:gravity="center"/>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_stock"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="10dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:contentPadding="10dp"
+                    card_view:cardBackgroundColor="#66FCF9F9"
+                    card_view:cardElevation="2dp"
+                    card_view:cardMaxElevation="6dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+
+                        <RelativeLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/ic_etat_stock"
+                                android:padding="13dp"/>
+
+
+
+                        </RelativeLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:src="@drawable/line_h"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="Stock"
+                            android:textSize="15dp"
+                            android:gravity="center"/>
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_client"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="10dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:contentPadding="10dp"
+                    card_view:cardBackgroundColor="#66FCF9F9"
+                    card_view:cardElevation="2dp"
+                    card_view:cardMaxElevation="6dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_customer"
+                            android:padding="15dp"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:src="@drawable/line_h"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:text="Client"
+                            android:textSize="15dp"
+                            android:gravity="center"/>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_vente"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="10dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:contentPadding="10dp"
+                    card_view:cardBackgroundColor="#66FCF9F9"
+                    card_view:cardElevation="2dp"
+                    card_view:cardMaxElevation="6dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+
+                        <RelativeLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:padding="15dp"
+                                android:src="@drawable/ic_vente_1" />
+
+
+                        </RelativeLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:src="@drawable/line_h"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="Vente"
+                            android:textSize="11dp"
+                            android:gravity="center"/>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_mouvement_caisse_depense"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="10dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:contentPadding="10dp"
+                    card_view:cardBackgroundColor="#66FCF9F9"
+                    card_view:cardElevation="2dp"
+                    card_view:cardMaxElevation="6dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="80dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/ic_type_dep"
+                                android:padding="10dp"/>
+
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:src="@drawable/line_h"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Mouvement Caisse Dépense"
+                            android:textSize="15dp"
+                            android:gravity="center"/>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_gratuite"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="10dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:contentPadding="10dp"
+                    card_view:cardBackgroundColor="#66FCF9F9"
+                    card_view:cardElevation="2dp"
+                    card_view:cardMaxElevation="6dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="80dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/ic_gratuit"
+                                android:padding="10dp"/>
+
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:src="@drawable/line_h"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Gratuité"
+                            android:textSize="15dp"
+                            android:gravity="center"/>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

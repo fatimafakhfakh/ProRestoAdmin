@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_personel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#40fffafa"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="2dp"
+                app:cardMaxElevation="2dp">
+
+              <!--  <FrameLayout
+                    android:id="@+id/frm_pos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/card_edge_white">
+
+                </FrameLayout>-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reste "
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"/>
+
+
+                        <TextView
+                            android:id="@+id/txt_qt_reste_a_livrer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/blue"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Articles pour Bon Gratuité"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"/>
+
+
+                        <TextView
+                            android:id="@+id/txt_gratuite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 "
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Livré "
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"/>
+
+
+                        <TextView
+                            android:id="@+id/txt_qt_livre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/blue"/>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:src ="@drawable/ic_transfert_5"
+                android:layout_marginTop="18dp"/>
+
+            <TextView
+                android:id="@+id/txt_convention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Convention 10/1"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="25dp"
+             />
+
+            <TextView
+                android:id="@+id/txt_code_designation_article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="001 FRITE LONG 7.5 KG "
+                android:textSize="13dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="18dp"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp"
+        card_view:cardBackgroundColor="#66FCF9F9"
+        card_view:cardElevation="2dp"
+        card_view:cardMaxElevation="6dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+
+                <RelativeLayout
+                    android:layout_width="110dp"
+                    android:layout_height="110dp">
+
+
+                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                        android:id="@+id/cpb_taux_recouvrement_du_jour"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                    <!--
+
+                                                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                                    android:id="@+id/cpb_cloture"
+                                                    android:layout_width="120dp"
+                                                    android:layout_height="120dp"
+                                                    android:layout_alignParentTop="true"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginBottom="10dp"
+                                                    android:layout_marginTop="10dp"
+                                                    />
+                    -->
+
+                    <TextView
+                        android:id="@+id/txt_taux_recouvrement"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center"
+                        android:text="65.25 %"
+                        android:textColor="@color/color_g_7"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:typeface="monospace"/>
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:src="@drawable/line_h"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_g_7"
+
+                    android:textSize="15dp"
+                    android:text="Taux Recouvrement"/>
+
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_vente"/>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="T. Vente "
+                            android:textStyle="bold"
+                            android:textSize="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/txt_total_vente_ttc"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="----.--- DT"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_g_1"
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:src="@drawable/line_h"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_retour"/>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="T. Retour"
+                            android:textStyle="bold"
+                            android:textSize="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/txt_total_retour_ttc"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="--- DT "
+                            android:textStyle="bold"
+                            android:textColor="@color/color_g_20"
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:src="@drawable/line_h"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_recouvreemnt"/>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="T. Reg/j"
+                            android:textStyle="bold"
+                            android:textSize="10dp" />
+
+
+                        <TextView
+                            android:id="@+id/txt_total_reg_j"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="--- DT"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_g_7"
+                            />
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:src="@drawable/line_h"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_recouvreemnt"/>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="T. Recouv"
+                            android:textStyle="bold"
+                            android:textSize="10dp" />
+
+
+                        <TextView
+                            android:id="@+id/txt_total_recouvrement"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="--- DT"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_g_7"
+                            />
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:src="@drawable/line_h"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_credit"/>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="R. A Crédit"
+                            android:textStyle="bold"
+                            android:textSize="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/txt_total_credit"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="--- DT"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_g_1"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true">
+
+
+                    <TextView
+                        android:id="@+id/txt_date_du_jour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="02/09/2020"
+                        android:textStyle="italic" />
+
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/_24h_etat_du_jour"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

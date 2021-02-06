@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_item_article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_code_article"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="001"
+                    android:textColor="@color/blue"
+                    android:textSize="15dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_designation_article"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="BS0019933 BS0019933BS0019933BS0019933BS  "
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Qt Stock: "
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="10dp"
+                            android:typeface="monospace" />
+
+                        <TextView
+                            android:id="@+id/txt_qt_stock_article"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="5220"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:typeface="monospace" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!--  <TextView
+                      android:id="@+id/txt_code_article"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_marginBottom="3dp"
+                      android:layout_marginLeft="10dp"
+                      android:gravity="center"
+                      android:typeface="serif"
+                      android:text="12/20/2019"
+                      />-->
+            </LinearLayout>
+
+
+            <!--       <android.support.constraint.ConstraintLayout
+                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:gravity="center"
+                       android:background="@android:color/transparent"
+                       android:layout_alignParentRight="true"
+                       android:padding="2dp"
+                       android:layout_marginTop="30dp">
+
+
+                       <android.support.design.widget.FloatingActionButton
+                           android:id="@+id/fab_cercel_qt"
+                           android:layout_width="31dp"
+                           android:layout_height="31dp"
+                           app:backgroundTint="@color/ripple_lite" />
+
+
+                       <TextView
+                           android:id="@+id/txt_nbr_click"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:elevation="10dp"
+                           android:text="1"
+                           android:textSize="16dp"
+                           android:gravity="center"
+                           android:textColor="@android:color/white"
+                           />
+
+                   </android.support.constraint.ConstraintLayout>-->
+
+            <!--  <CheckBox
+                  android:id="@+id/cb_select_article"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_alignParentTop="true"
+                  android:layout_marginRight="2dp"
+                  android:layout_marginTop="2dp"
+                  android:buttonTint="@color/yello"
+                  android:clickable="false"
+                />-->
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

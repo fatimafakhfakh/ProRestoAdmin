@@ -173,7 +173,6 @@ public class BonGratuiteActivity extends AppCompatActivity {
 
     public void updateData() {
 
-
         EtatBonGratuiteTask etatBonGratuiteTask = new EtatBonGratuiteTask(BonGratuiteActivity.this, date_debut, date_fin, rv_list_bon_gratuite, pb, search_bar_client);
         etatBonGratuiteTask.execute();
     }

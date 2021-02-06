@@ -88,9 +88,6 @@ public class GratuiteMenuFragment extends Fragment {
             }
         });
 
-
-        //
-
         return root;
     }
 

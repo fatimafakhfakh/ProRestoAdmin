@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.gratuite.activity.BonGratuiteActivity"
     android:background="@drawable/back_echek_2">
-
 
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -112,13 +112,10 @@
                 android:gravity="center">
 
 
-
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center">
-
-
 
 
                     <androidx.recyclerview.widget.RecyclerView
@@ -130,25 +127,11 @@
                         android:stretchMode="columnWidth"/>
 
 
-
                     <ProgressBar
                         android:id="@+id/pb"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_centerInParent="true"/>
-
-
-
-                    <!--  <ListView
-                          android:id="@+id/lv_list_bon_transfert_en_attente"
-                          android:layout_width="match_parent"
-                          android:layout_height="match_parent"
-                          android:layout_margin="5dp"
-                          android:divider="#00ffffff"
-                          android:dividerHeight="5dp"
-                          android:padding="5dp">
-                         </ListView>
-                          -->
 
 
                 </RelativeLayout>
@@ -160,8 +143,5 @@
         </LinearLayout>
 
     </RelativeLayout>
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
